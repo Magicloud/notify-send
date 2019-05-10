@@ -1,0 +1,12 @@
+[package]
+name = "notify-send"
+version = "2019.5.8"
+authors = ["Magicloud <1886157+Magicloud@users.noreply.github.com>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = 'abort'
+
+[dependencies]
+dbus = "0.6.4"
